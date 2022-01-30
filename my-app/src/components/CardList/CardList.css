@@ -1,0 +1,11 @@
+ul {
+  padding: 0;
+}
+
+li {
+  list-style: none;
+  margin-bottom: 20px;
+  color: rgb(236, 230, 233);
+  text-align: right;
+}
+

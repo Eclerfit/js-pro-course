@@ -1,0 +1,15 @@
+body {
+  margin: 0;
+  font-family: 'Open sans', sans-serif;
+  background: #dde6f1;
+  font-family: Mochiy Pop P One;
+  font-weight: 100;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
