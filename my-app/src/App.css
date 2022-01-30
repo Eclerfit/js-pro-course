@@ -1,0 +1,108 @@
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+}
+
+
+.App-header {
+  background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(221,230,241,1) 100%);
+  font-size: 15px;
+  color: #664d9f;
+  
+}
+
+.App-footer {
+  background: rgba(180, 206, 238, 0.5);
+  align-items: flex-end;
+  font-size: 10px;
+  color: #664d9f;
+}
+
+.App-cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.App-card {
+  background: linear-gradient(90deg, rgba(221,230,241,1) 0%, rgba(102,77,159,1) 110%);
+  padding: 0px 30px 20px 55px;
+  border-radius: 20px ;
+  -webkit-box-shadow: -14px 25px 19px 1px rgba(34, 60, 80, 0.2);
+-moz-box-shadow: -14px 25px 19px 1px rgba(34, 60, 80, 0.2);
+box-shadow: 20px 25px 19px 1px rgba(34, 60, 80, 0.2);
+z-index: 5;
+}
+
+.App-card:first-child::before {
+content: 'Fitness';
+position: relative;
+top: -5%;
+left: 0%;
+text-align: center;
+color: #664d9f;
+background: rgba(238,174,202,1);
+border-radius: 20px;
+padding: 10px 60px;
+font-size: 22px;
+}
+
+.App-card:last-child::before {
+  content: 'Gym';
+  position: relative;
+  top: -5%;
+  left: 0%;
+  text-align: center;
+  color: #664d9f;
+  background: rgba(238,174,202,1);
+  border-radius: 20px;
+  padding: 10px 80px;
+  font-size: 22px;
+  }
+
+.workout__img {
+  width: 400px;
+  height: 400px;
+  align-self: top;
+  margin: 0 80px;
+}
+
+@media (max-width: 1250px) { 
+  .workout__img {
+    display: none;
+  }
+  .App-cards {
+    justify-content: space-around;
+  }
+}
+
+@media (max-width: 950px) { 
+  .App-cards {
+    display: block;
+    width: 350px;
+    margin: 0 auto;
+  }
+
+  .App-card:first-child {
+    margin: 0 0 150px 0;
+  }
+}
+
+@media (max-width: 390px) { 
+  li {
+    font-size: 14px;
+  }
+  .App-cards {
+    width: 320px;
+
+  }
+
+  .App-card:first-child {
+    margin-bottom: 30px;
+  }
+}
+
+
